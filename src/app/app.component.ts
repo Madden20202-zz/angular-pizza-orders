@@ -8,7 +8,6 @@ import { ApiService } from './api.service';
 })
 export class AppComponent {
   title = 'angular-pizza-orders';
-
   orderData: any
 
   constructor(private api:ApiService) { }
