@@ -1,3 +1,5 @@
 <h1>Current Orders</h1>
 
-<app-pizza-order></app-pizza-order>
+<app-pizza-order *ngFor="let order of orderData" app-pizza-order [order]=""order="">
+    
+</app-pizza-order>
