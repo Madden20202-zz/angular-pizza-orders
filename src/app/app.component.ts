@@ -12,4 +12,14 @@ export class AppComponent {
   orderData: any
 
   constructor(private api:ApiService) { }
+
+  ngOninit(): void {
+    this.findOrderData();
+  }
+
+  findOrderData(): any {
+    this.api.getPizzaOrder().subscribe((data)=> {
+      this.orderData = data
+    })
+  }
 }
