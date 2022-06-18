@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pizza-orders';
+  orderData: any
+
+  constructor(private api:ApiService) { }
+
+  ngOninit(): void {
+    this.findOrderData();
+  }
+
+  findOrderData(): any {
+    this.api.getPizzaOrder().subscribe((data)=> {
+      this.orderData = data
+    })
+  }
 }
