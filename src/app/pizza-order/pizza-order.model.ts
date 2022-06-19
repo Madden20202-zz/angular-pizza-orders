@@ -1,5 +1,3 @@
-import { Sanitizer } from "@angular/core"
-
 export class PizzaOrder {
 
     //These are the new variables to have the info transfered to
