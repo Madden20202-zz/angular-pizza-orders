@@ -7,7 +7,6 @@ import { ApiService } from './api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-pizza-orders';
   orderData: any
 
   constructor(private api:ApiService) { }
