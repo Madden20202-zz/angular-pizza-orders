@@ -8,9 +8,10 @@ import { Pizza } from './pizza.model';
 })
 export class PizzaOrderComponent implements OnInit {
 
-  @Input() order: Pizza 
+  @Input() order!: Pizza
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
