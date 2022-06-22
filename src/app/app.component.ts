@@ -1,4 +1,3 @@
-import { JsonpClientBackend } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ApiService } from './api.service';
 
@@ -19,7 +18,6 @@ export class AppComponent {
   findOrderData(): any {
     this.api.getPizzaOrder().subscribe((data)=> {
       this.orderData = data
-      return JSON.parse(this.orderData)
     })
   }
 }

@@ -7,11 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PizzaOrderComponent implements OnInit {
 
-  @Input() order: any
+  @Input() order: any 
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
