@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Pizza } from './pizza.model';
 
 @Component({
   selector: 'app-pizza-order',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PizzaOrderComponent implements OnInit {
 
-  @Input() order: any 
+  @Input() order: Pizza 
 
   constructor() { }
 
