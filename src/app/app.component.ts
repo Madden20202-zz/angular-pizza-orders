@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from './api.service';
 
 @Component({
@@ -7,11 +7,12 @@ import { ApiService } from './api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'angular-pizza-orders'
   orderData: any
 
   constructor(private api:ApiService) { }
 
-  ngOninit(): void {
+  ngOnInit() {
     this.findOrderData();
   }
 
