@@ -15,7 +15,7 @@ export class AppComponent {
   ngOnInit() {
     this.findOrderData();
   }
-
+  
   findOrderData(): any {
     this.api.getPizzaOrder().subscribe((data)=> {
       this.orderData = data
